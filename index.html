@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e5401bd2bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Java FullStack Developer</p>
+                <h1>Hi, I'm <span>Nandita</span> from Bhatkal</h1>
+            </div>
+        </div>
+
+    </div>
+    <!----------------------------About----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        I'm BE graduate from Computer Science in Sahyadri college of Engineering and Management, Mangalore.
+                        I pursued Java FullStack course in Pentagon Space. Seeking an opportunity to utilize my skills and abilities 
+                        in the Information Technology industry, that offers me Professional growth being resourceful,
+                        innovative and flexible. Entry level position in Software development. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Programming Language</li>
+                            <li><span>Sql</span><br>Database Query Language</li>
+                            <li><span>HTML, Css, JavaScript</span><br>Web Technology</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br><span class="perc">93.6%</span><br>Morarji Desai Residential School, Murdeshwar</li>
+                            <li><span>2019</span><br><span class="perc">93.83%</span><br>Siddhartha PU College, Bhatkal</li>
+                            <li><span>2023</span><br><span class="perc">8.56 CGPA</span><br>Sahyadri College of Engineering and Management, Mangalore</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-------------------------------------Portfolio ----------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt="" height="500" width="500">
+                    <div class="layer">
+                        <h3>Face Forgery Detection in Video Content</h3>
+                        <p id="face">The main aim of this project is <br>to detect whether the face in <br>the video is forged or not. <!--In this project,
+                            We have to upload video which is there in dataset to the model then it'll check and give the output.-->
+                        </p>
+                        <a href="#" ><i class="fa-sharp fa-solid fa-up-right-from-square" onclick="click()"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpeg" alt=""height="500" width="500">
+                    <div class="layer">
+                        <h3>Event Management System</h3>
+                        <p>This is an online event booking application which has  two module admin and customer. <br>
+                         Admin manages all activities related to events and customer can book the events what he want. </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="" height="500" width="500">
+                    <div class="layer">
+                        <h3>Pethub</h3>
+                        <p>This is an online product booking application which has  two module admin and customer. <br>
+                       Admin manages all activities related to products and customer can book <br> the product according to his need. </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------------------------Contact Form------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>naiknandita44@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6360708868</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                 <a href="images/Nandita_cv.pdf" download class="btn btn2">Download CV</a>
+                 
+            </div>
+            <div class="contact-right">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" >Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; Nandita. Made with <i class="fa-solid fa-heart"></i> by easy Tutorials </p>
+        </div>
+    </div>
+
+    <script src="about.js"> </script>
+    <script src="menu.js"> </script>
+    <script src="contact.js"></script>
+</body>
+</html>
